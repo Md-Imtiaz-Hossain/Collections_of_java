@@ -2,16 +2,13 @@
         Indexed: No
         Null Value: Yes
         Duplicate:  No
-        Ordered: No
+        Ordered of inserting value: No
         */
 
 
 package Set__;
 
-import java.util.Comparator;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Hash_Set {
     public static void main(String[] args) {
@@ -25,8 +22,34 @@ public class Hash_Set {
         hashSet.add(40);
         hashSet.add(4);
         hashSet.add(3);
-
         System.out.println("Unsorted Hash Set - "+hashSet);
+
+
+        Set<String> hashSet1;
+        Set<String> hashSet2;
+
+
+
+        hashSet1 = new HashSet<>(Arrays.asList("a","b","c"));
+        hashSet2 = new HashSet<>(Arrays.asList("b","c","d"));
+        // Union
+        hashSet1.addAll(hashSet2);
+        System.out.println("Union of (a,b,c) & (d,b,c) -> " + hashSet1);
+
+
+        hashSet1 = new HashSet<>(Arrays.asList("a","b","c"));
+        hashSet2 = new HashSet<>(Arrays.asList("b","c","d"));
+        // Intersection
+        hashSet1.retainAll(hashSet2);
+        System.out.println("Intersection of (a,b,c) & (d,b,c) -> " + hashSet1);
+
+
+        hashSet1 = new HashSet<>(Arrays.asList("a","b","c"));
+        hashSet2 = new HashSet<>(Arrays.asList("b","c","d"));
+        // Difference
+        hashSet1.removeAll(hashSet2);
+        System.out.println("Difference of (a,b,c) & (d,b,c) -> " + hashSet1);
+
 
 
     }
