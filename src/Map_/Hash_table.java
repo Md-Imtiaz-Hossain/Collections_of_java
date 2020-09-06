@@ -7,6 +7,7 @@ import java.util.Set;
 public class Hash_table {
     public static void main(String[] args) {
         Hashtable<Integer,String> hashtable = new Hashtable<>();
+        // Same as Map<Integer,String> hashtable = new Hashtable<>();
         hashtable.put(105, "Apple");
         hashtable.put(308, "Ball");
         hashtable.put(180, "Cat");

@@ -1,10 +1,11 @@
-/*-----------------------Hash_Set---------------
-        Indexed: No
+/*-----------------------Hash_Map---------------
+        Indexed(index is ordered): No
         Null Value: only one - Yes
         Duplicate:  50%
-        if key same + value different -> last value set in perevious where the key is same
+        Inserting Duplication Note:-
+        if key same + value different -> last value set in previous where the key is same
         if key different + value same -> Both key Stored With Different Value
-        Ordered: No
+        Ordered(value is ordered): No
         */
 
 

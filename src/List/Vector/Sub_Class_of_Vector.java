@@ -1,33 +1,32 @@
-package List;
+package List.Vector;
 
 import java.util.ArrayList;
 
 public class Sub_Class_of_Vector {
     public static void main(String[] args) {
-        Stack stk =new Stack();
-        stk.push(15);
-        stk.push(30);
-        stk.push(45);
-        stk.push(60);
-        stk.listPrint();
-        stk.peek();
+        Stack stkList =new Stack();
+        stkList.push(15);
+        stkList.push(30);
+        stkList.push(45);
+        stkList.push(60);
+        stkList.listPrint();
+        stkList.peek();
 
-        stk.pop();
-        stk.listPrint();
-        stk.peek();
+        stkList.pop();
+        stkList.listPrint();
+        stkList.peek();
 
-        stk.push(75);
-        stk.push(90);
-        stk.listPrint();
-        stk.pop();
-        stk.listPrint();
+        stkList.push(75);
+        stkList.push(90);
+        stkList.listPrint();
+        stkList.pop();
+        stkList.listPrint();
     }
 
 }
 
 
 class Stack{
-
 
     ArrayList list = new ArrayList();
 
@@ -55,7 +54,6 @@ class Stack{
             System.out.println("Top- "+list.get(i));
             break;
         }
-
         for (int j = list.size()-1 ; j >= 0 ; j--) {
             System.out.println("Bottom- "+list.get(j));
             break;
